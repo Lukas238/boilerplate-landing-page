@@ -1,0 +1,15 @@
+
+.m-page-title{
+
+  text-align: center;
+  border-bottom: 2px solid blue;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+
+
+  .eyebrow{
+    font-size: .6em;
+    display: block;
+  }
+}
+

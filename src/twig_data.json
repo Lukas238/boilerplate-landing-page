@@ -1,0 +1,44 @@
+{
+  "username": "Juan Pepito",
+  "purchase_msg": "Any purchase made today will be shipped for free!",
+  "products_list": [
+    {
+      "id": "SKU-1",
+      "type": "towells",
+      "cta": "Add to cart this item asdasda sdasd asda s",
+      "name": "Product 1",
+      "price": 12.99,
+      "description": "",
+      "preview": {
+        "src": "https://picsum.photos/200/300",
+        "src_mobile": "https://picsum.photos/100/100",
+        "alt": "Product 1 preview"
+      }
+    },
+    {
+      "id": "SKU-2",
+      "type": "",
+      "cta": "Add me!",
+      "name": "Product 2",
+      "price": 9.99,
+      "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione a ad tempora? Sed asperiores nemo suscipit quidem qui illo repellat? Fuga aut expedita totam laboriosam eum. Sit, praesentium consectetur. Quae!</p><p>Architecto omnis eveniet, eius fugit quibusdam ipsam, nam veritatis maxime molestias saepe, iusto nihil voluptate dolores itaque nulla consectetur perferendis atque vitae sed reprehenderit. Nihil labore minus aut mollitia laboriosam?</p><p>Beatae incidunt obcaecati animi ipsa laboriosam earum quisquam esse! Placeat hic, esse distinctio veniam, non, enim culpa est libero iste quod consequuntur facilis voluptates id corrupti minima vero ex tenetur.</p>",
+      "preview": {
+        "src": "https://picsum.photos/200/300"
+      }
+    },
+    {
+      "id": "SKU-3",
+      "type": "shoes",
+      "name": "Product 3",
+      "price": "100,123.99",
+      "description": "<p>Voluptatem unde animi quo, cumque, debitis qui voluptate ullam suscipit ipsum?</p>"
+    },
+    {
+      "id": "SKU-4",
+      "type": "shoes",
+      "name": "Product 4",
+      "price": 2345.99,
+      "description": ""
+    }
+  ]
+}

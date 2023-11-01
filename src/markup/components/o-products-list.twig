@@ -1,0 +1,32 @@
+<div class="o-products-list">
+    <div class="wrap">
+
+        <ul>
+            {% for product in products_list %}
+                <li>
+
+                    {% embed  "components/m-product-card.twig" %}
+
+                        {% block additiona_message %}
+
+                            {% if loop.index0 == 0 %}
+
+                                {% if purchase_msg is defined %}
+                                    {% include "components/m-alert.twig" with {
+                            message: purchase_msg
+                        }%}
+                                {% endif %}
+
+                            {% endif %}
+
+                        {% endblock %}
+
+                    {% endembed %}
+
+                </li>
+            {% endfor %}
+        </ul>
+
+
+    </div>
+</div>

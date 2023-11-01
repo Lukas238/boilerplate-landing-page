@@ -1,0 +1,26 @@
+<div class="m-hero {{ is_highlighted ? '-highlighted' }}">
+    <div class="wrap">
+
+        <div class="m-hero__row">
+            <div class="m-hero__row__col-4">
+
+                 <h1 class="title">{{ title|default('No te olvides de pasar el titulo, gato!')}}</h1>
+
+                {% if cta is defined %}
+                <a href="{{cta.url}}" class="cta">{{ cta.text }}</a>
+                {% endif %}
+
+            </div>
+            <div class="col-6">
+
+                <div class="thumb">
+                    <img src="{{ image.src }}" alt="{{ image.alt|default('') }}">
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>

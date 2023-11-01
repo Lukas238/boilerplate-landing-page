@@ -1,0 +1,6 @@
+.m-alert{
+  border: 1px solid #ccc;
+  padding: .5em 1em;
+
+  border-left: 5px solid blue;
+}

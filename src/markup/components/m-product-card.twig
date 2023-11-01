@@ -1,0 +1,42 @@
+<article id="{{ product.id }}" class="m-product-card m-product-card--{{ product.type|default('generic') }}">
+    <div class="wrap">
+
+        {% block additiona_message %}{% endblock %}
+
+        <header>
+            <h1 class="m-product-card__title " aria-label="{{ product.name }} with product code {{ product.id }}">
+                <span class="eyebrow">[{{ product.id }}]</span>
+                {{ product.name }}
+            </h1>
+
+
+            <div class="m-product-card__thumb">
+                <img src="{{ product.preview.src|default('https://placehold.co/200x300') }}" alt="{{ product.preview.alt|default('Preview of ' ~ product.name ) }}">
+            </div>
+
+        </header>
+
+        <div class="m-product-card__content">
+
+            <div class="m-product-card__price">
+                <label>Price:</label>
+                <span class="product-value" data-value="{{ product.price }}">{{ format_currency(product.price|replace({',': ''})) }}</span>
+            </div>
+
+            <a aria-label="Add to cart {{ product.name }}" role="button" href="/cart.php?acction=add?product_id={{ product.id }}" class="m-product-card__content__cta btn btn-primary">{{ product.cta|default("Add to cart") }} </a>
+
+            {% if product.description %}
+                <div class="m-product-card__description">
+                    <h4 class="m-product-card__description__title">Description:</h4>
+                    <div class="m-product-card__description__content">
+                    {{ product.description }}
+                    </div>
+                </div>
+            {% endif %}
+
+
+
+        </div>
+
+    </div>
+</article>

@@ -1,0 +1,32 @@
+.m-hero{
+
+  outline: 1px solid red;
+
+
+  .wrap{
+    outline: 1px solid blue;
+    margin: 0 auto;
+    width: 700px;
+
+    .thumb{
+      max-height: 400px;
+      overflow: hidden;
+      object-fit: cover;
+
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &.-highlighted{
+    .title{
+      color: green;
+    }
+  }
+
+
+
+}
